@@ -1,6 +1,6 @@
 FROM docker.elastic.co/elasticsearch/elasticsearch:7.6.2
 USER root
-RUN user addd -u 1500 iddqd
+RUN useradd -u 1500 iddqd
 RUN usermod -u 1500 iddqd
 RUN groupmod -g 1500 iddqd
 USER iddqd
